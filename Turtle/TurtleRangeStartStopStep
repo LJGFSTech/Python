@@ -1,0 +1,14 @@
+import turtle
+wn = turtle.Screen()
+t = turtle.Turtle()
+wn.bgcolor("lightgreen")
+t.color("blue")
+t.shape("turtle")
+
+t.up()                     # this is new
+for size in range(5, 100, 2):  # start with size = 5 and grow by 2
+    t.stamp()                 # leave an impression on the canvas
+    t.forward(size)           # move tess along
+    t.right(24)               # and turn her
+ 
+wn.exitonclick()
