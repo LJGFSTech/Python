@@ -12,7 +12,7 @@ t.color("green")
 t.pensize(5)
 
 #Tedious to repeat code. What if you have a 42 sided polygon? When code duplicates put it in a loop.  This is called iteration
-#Format of Loop statement:
+#Format of range loop statement:
 #for loop-variable in range (start, stop, step):  indent everything after the colon
     #statement 1
     #statement 2   and so on...
