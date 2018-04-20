@@ -3,43 +3,50 @@
 #import/load turtle module
 import turtle
 
-
 t = turtle.Turtle()
 wn = turtle.Screen()
 wn.bgcolor("skyblue")
-wn.title("Turtle Power!")
+wn.title("For Loop Turtle")
 
 t.color("green")
 t.pensize(5)
 
-#make another square of a different color and use a for i in range(): loop
+#Tedious to repeat code. What if you have a 42 sided polygon? When code duplicates put it in a loop.  This is called iteration
+#Format of Loop statement:
+#for loop-variable in range (start, stop, step):  indent everything after the colon
+    #statement 1
+    #statement 2   and so on...
 
 for i in range (4):
     t.forward(100)
     t.right(90)
 
+#Looping a sequence format:
+#For loop-variable in [sequence]: indent everything after the colon
 
-#Make a list of colors
+t.penup()
+t.backward(150)
+t.pendown()
 
-""""for c in ["yellow", "red", "blue", "purple"]:
+#Make a list of colors to loop through
+
+for c in ["yellow", "red", "blue", "purple"]:
     t.color(c)
     t.forward(100)
     t.left(90)
     
 t.penup()
-t.forward(150)
+t.forward(300)
 t.pendown()
 
+#or make colors variable and assign it to a list of colors
 colors = ["hotpink", "purple", "limegreen", "darkviolet"]
-
+#then loop through the colors in the body of the loop
 for i in colors:
     t.color(i)
     t.forward (100)
-    t.left(90)"""
+    t.left(90)
 
-
-
-#waits for a user to close a window
-wn.mainloop()
-
+#ends program when user to clicks on window
+wn.exitonclick()
 
