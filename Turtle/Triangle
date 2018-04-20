@@ -1,0 +1,31 @@
+#Loops in Turtle Graphics
+
+#import/load turtle module
+import turtle
+
+
+t = turtle.Turtle()
+wn = turtle.Screen()
+wn.bgcolor("skyblue")
+wn.title("Tri Turtle!")
+
+t.color("green")
+t.pensize(5)
+
+#make another square of a different color and use a for i in range(): loop
+
+for i in range (3):
+    t.forward(200)
+    t.left(120)
+
+#make the sides different colors
+
+colors = ["red", "yellow", "blue"]
+
+for j in colors:
+    t.color(j)
+    t.forward(200)
+    t.left(120)
+    
+#waits for a user to close a window
+wn.exitonclick()
