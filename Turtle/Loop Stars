@@ -1,0 +1,40 @@
+#Loops in Turtle Graphics
+
+#import/load turtle module
+import turtle
+
+t = turtle.Turtle()
+wn = turtle.Screen()
+wn.bgcolor("skyblue")
+wn.title("Turtle Power!")
+
+t.color("violet")
+t.pensize(5)
+t.speed(10)
+
+#8 pointed star
+for j in range (9):
+    t.forward(300)
+    t.left(225)
+
+t.color("red")
+
+t.penup()
+t.goto(-200, 50)
+t.pendown()
+
+#many-pointed stars
+for j in range (35):
+    t.forward(200)
+    t.left(175)
+         
+t.penup()
+t.goto(0,200)
+t.pendown()
+
+for x in range (1,20):
+    t.forward(100)
+    t.left(95)
+
+#ends program when user to clicks on window
+wn.exitonclick()
